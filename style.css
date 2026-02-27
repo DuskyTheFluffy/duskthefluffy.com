@@ -278,6 +278,7 @@ footer {
     margin-top: 10px;
 }
 
+
 @media (max-width: 768px) {
     .countdown-timer {
         margin: 40px 20px;
@@ -286,19 +287,29 @@ footer {
     .countdown-timer h2 {
         font-size: 1.5rem;
     }
+
     #countdown {
         font-size: 1.5rem;
     }
 }
+
 @media (max-width: 480px) {
     .countdown-timer {
         margin: 30px 10px;
         padding: 20px;
     }
+
     .countdown-timer h2 {
         font-size: 1.3rem;
     }
+
     #countdown {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: 400% 400%;
     }
 }
