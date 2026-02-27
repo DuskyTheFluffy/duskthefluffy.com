@@ -1,3 +1,4 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -149,7 +150,7 @@ h1 {
     background: #4f46e5;
 }
 
-/* GAMES*/
+/* GAMES */
 .games-grid {
     display: grid;
     gap: 18px;
@@ -183,6 +184,32 @@ footer {
     text-align: center;
     padding: 40px;
     opacity: 0.5;
+}
+
+/* Countdown Timer */
+.countdown-timer {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 50px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.countdown-timer h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-left: 4px solid rgba(241, 99, 165, 0.6);
+    padding-left: 15px;
+}
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Yellow for visibility */
+    margin-top: 10px;
 }
 
 /* Mobile responsiveness */
@@ -221,6 +248,19 @@ footer {
     .project-list {
         grid-template-columns: 1fr;
     }
+
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .countdown-timer {
+        padding: 30px 20px;
+        margin: 40px 20px;
+    }
+
+    #countdown {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -234,73 +274,13 @@ footer {
     }
 
     .games-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         gap: 12px;
     }
-}
 
-@media (max-width: 800px) and (min-width: 481px) {
-    .games-grid {
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
-    }
-}
-
-@media (max-width: 1100px) and (min-width: 801px) {
-    .games-grid {
-        grid-template-columns: repeat(3, minmax(150px, 1fr));
-    }
-}
-/* Countdown Timer */
-.countdown-timer {
-    max-width: 1100px;
-    margin: 80px auto;
-    padding: 50px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    text-align: center;
-}
-
-/* Countdown Timer Heading */
-.countdown-timer h2 {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    border-left: 4px solid rgba(241, 99, 165, 0.6);
-    padding-left: 15px;
-}
-
-/* Countdown Timer Text */
-#countdown {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ffffff;
-    margin-top: 10px;
-}
-
-
-@media (max-width: 768px) {
     .countdown-timer {
-        margin: 40px 20px;
-        padding: 30px;
-    }
-    .countdown-timer h2 {
-        font-size: 1.5rem;
-    }
-
-    #countdown {
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .countdown-timer {
-        margin: 30px 10px;
-        padding: 20px;
-    }
-
-    .countdown-timer h2 {
-        font-size: 1.3rem;
+        padding: 25px 15px;
+        margin: 30px 15px;
     }
 
     #countdown {
@@ -308,8 +288,8 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
-    body {
-        background-size: 400% 400%;
+@media (max-width: 1100px) and (min-width: 801px) {
+    .games-grid {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
     }
 }
