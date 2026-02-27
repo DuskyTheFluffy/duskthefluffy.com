@@ -149,6 +149,31 @@ h1 {
     background: #4f46e5;
 }
 
+/* GAMES*/
+.games-grid {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-square {
+    width: 210px;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+}
+
+.game-square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
