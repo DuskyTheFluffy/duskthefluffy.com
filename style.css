@@ -250,3 +250,27 @@ footer {
         grid-template-columns: repeat(3, minmax(150px, 1fr));
     }
 }
+.countdown-timer {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 50px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.countdown-timer h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    border-left: 4px solid rgba(241, 99, 165, 0.6);
+    padding-left: 15px;
+}
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff; /* Yellow for visibility */
+    margin-top: 10px;
+}
