@@ -151,16 +151,20 @@ h1 {
 
 /* GAMES*/
 .games-grid {
-    display: flex;
+    display: grid;
     gap: 18px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
+    align-items: start;
+    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 .game-square {
-    width: 210px;
-    height: 300px;
+    width: 100%;
+    max-width: 210px;
+    aspect-ratio: 7 / 10;
     border-radius: 12px;
     overflow: hidden;
     background: rgba(255,255,255,0.03);
@@ -227,5 +231,22 @@ footer {
     .social-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 481px) {
+    .games-grid {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 801px) {
+    .games-grid {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
     }
 }
