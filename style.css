@@ -166,14 +166,14 @@ h1 {
 .project-card {
     padding: 25px;
     border-radius: 20px;
-    background: linear-gradient(145deg, rgba(241, 99, 194, 0.1), rgba(0,0,0,0.3));
+    background: linear-gradient(145deg, rgba(158, 69, 129, 0.1), rgba(19, 20, 20, 0.3));
     transition: 0.3s ease;
     transform: scale(1);
 }
 
 .project-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 15px 35px rgba(241, 99, 165, 0.6);
+    box-shadow: 0 15px 35px rgba(180, 79, 126, 0.6);
 }
 
 .project-card h3 {
