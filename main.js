@@ -1,7 +1,11 @@
 // Function to update the countdown timer
 function updateCountdown() {
-    const targetDate = new Date("March 27, 2026 00:00:00").getTime();
-    const now = new Date().getTime();
+    // Get the current time in UTC
+    const nowUTC = new Date().toISOString();
+
+    // Convert the target date to UTC and adjust it to EST (UTC-5)
+    const targetDate = new Date("March 27, 2026 00:00:00 GMT-0500").getTime();
+    const now = new Date(nowUTC).getTime();
     const distance = targetDate - now;
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
